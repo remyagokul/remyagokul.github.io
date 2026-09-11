@@ -97,12 +97,25 @@ footer p{font:9px Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase;
 }
 
 /* Mobile hero fix: keep the full couple visible */
+/* Desktop hero */
+.hero-bg{
+  background-size:cover;
+  background-position:center center;
+  background-repeat:no-repeat;
+}
+
+/* Mobile hero: show the complete photo without cropping the couple */
 @media(max-width:720px){
+  .hero{
+    min-height:100svh;
+    background:#073f3a;
+  }
+
   .hero-bg{
     background-size:100% auto;
     background-position:center top;
     background-repeat:no-repeat;
-    background-color:#173f3a;
+    background-color:#073f3a;
   }
 }
 
