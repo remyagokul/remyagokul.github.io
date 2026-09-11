@@ -121,6 +121,47 @@ footer p{font:9px Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase;
   }
 }
 
+
+/* Responsive hero fix */
+.hero-bg{
+  background-size:cover;
+  background-position:center center;
+  background-repeat:no-repeat;
+}
+
+@media(max-width:720px){
+  .hero{
+    min-height:0;
+    height:auto;
+    background:#073f3a;
+  }
+
+  .hero-bg{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    height:auto;
+    aspect-ratio:3 / 4;
+    background-size:100% 100%;
+    background-position:center top;
+    background-repeat:no-repeat;
+    background-color:#073f3a;
+  }
+
+  .hero-content{
+    position:relative;
+    z-index:2;
+    min-height:0;
+    padding:90px 18px 50px;
+  }
+
+  .names{
+    font-size:clamp(44px,14vw,78px);
+    line-height:1.02;
+  }
+}
+
 </style>
 </head>
 <body>
